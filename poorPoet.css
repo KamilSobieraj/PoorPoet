@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+
+body {
+  background: url(https://images.template.net/wp-content/uploads/2015/04/229713-Old-paper-texture.jpg);
+  background-size: cover;
+  font-family: "Special Elite", cursive;
+  display: flex;
+  background-color: rgb(246, 233, 189);
+  font-size: 18px;
+}
+.poem__wrapper {
+  justify-content: center;
+  margin: 30px auto;
+  padding: 20px;
+}
+.poem__title {
+  font-weight: bold;
+  font-size: 3em;
+}
+.poem__steps-display {
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  grid-template-rows: repeat(8, min-content);
+}
+
+.vertical {
+  margin: 0;
+  margin-right: 5px;
+  transform: rotate(-90deg);
+  align-self: start;
+  justify-self: start;
+}
+.horizontal {
+  margin: 0;
+  margin-left: 5px;
+}
+.step1-vert {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+.step1-horiz {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+.step2-vert {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  transform: rotate(-90deg);
+}
+.step2-horiz {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  margin-left: 12px;
+  margin-bottom: 7px;
+}
+.step3-vert {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  transform: rotate(-90deg);
+}
+.step3-horiz {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.step4-vert {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  transform: rotate(-90deg);
+}
+.step4-horiz {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+.poem__ramp-display {
+  display: inline-block;
+  transform: translateY(20px) rotate(10deg);
+  margin-bottom: 50px;
+}
